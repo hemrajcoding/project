@@ -1,0 +1,485 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000103;
+      overflow: hidden;
+      padding: 15px;
+
+    }
+
+    .navbar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+      margin-right: 30px;
+    }
+
+    .navbar a:hover {
+      background-color: #45a049;
+      font-size: 19px;
+    }
+
+   
+    .navbar a.active:hover {
+     background-color: #0000F7;
+     font-size: 20px;
+    }
+
+    .navbar .nav-link {
+      background-color: transparent;
+    }
+
+    .navbar .nav-link:hover {
+  background-color: #0000F7;
+    }
+
+    .navbar .nav-link.active {
+      background-color: transparent;
+    }
+
+    /* Add padding to the body to prevent content from overlapping with the fixed navbar */
+    body {
+      padding-top: 60px;
+    }
+/*image slider code for (home page)*/
+
+  .image-slider {
+    width: 100%; /* Adjust the width as desired */
+    height: 400px; /* Adjust the height as desired */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-slider-inner {
+    display: flex;
+    width: 400%; /* Adjusted width to accommodate four images */
+    animation: slide 10s infinite;
+  }
+  
+  .image-slider-item {
+    flex: 25%;
+    transition: transform 0.5s;
+    position: relative;
+  }
+  
+  .image-slider-item img {
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .marquee-container {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    overflow: hidden;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+/* this is our main Goal */
+  .container {
+    margin-top: 5px;
+  display: flex;
+  align-items: center;
+
+  width: 1000px;
+
+}
+.content{
+  margin-left: 10px;
+}
+.image img{
+    border-radius: 10px;
+
+}
+
+/*<!--this is our Identity hemraj khatri mukesh sharma sirjana and manju-->*/  
+  .container1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    
+    }
+    
+    .card-image {
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .card-content {
+      margin-bottom: 10px;
+    }
+    
+    .card-header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    .IdOfPerson{
+      color: green;
+    }
+
+
+
+
+
+/*footer code */
+
+footer {
+      background-color: #000103;
+      padding: 20px;
+  
+      text-align: center;
+    }
+    .FirstFooter{
+      color: white;
+
+    }
+    /*social Icon*/
+
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons li {
+      margin: 0 30px;
+
+    }
+
+    .social-icons a {
+      color: #2bc43a;
+      font-size: 24px;
+    }
+    .social-icons a:hover{
+   color: #f6ff00;
+      font-size: 28px;
+    }
+
+
+
+
+    .footer-container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .footer-content {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .footer-links {
+      margin: 0 50px;
+      list-style-type: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+
+    }
+    
+    .footer-links a {
+      text-decoration: none;
+      color: white;
+    
+    }
+    
+    .footer-links a:hover {
+      color: gold;
+    }
+    
+    .footer-content:last-child {
+      margin-bottom: 0;
+    }
+    .copyright{
+      color: white;
+    }
+
+
+/*3 ota faculty ko css */
+.faculty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-card {
+  width: 300px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+.book-card:hover{
+    width: 330px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+  }
+
+.book-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.book-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.book-card .btn-view-details1 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-card .btn-view-details1:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/*this is book list css */
+    .book-list {
+  display: flex;
+  justify-content: center;
+}
+
+.book-card {
+  width: 250px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+.book-card:hover {
+ width: 260px;
+box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+background-color: #aeff00;
+
+  }
+
+.book-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.book-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.book-card .btn-view-details,
+.book-card .btn-request-book {
+  display: inline-block;
+
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;  width: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-card .btn-view-details:hover,
+.book-card .btn-request-book:hover {
+  background-color: #45a049;
+}
+
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.book-details {
+  /* Style the book details here */
+}
+
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: white;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#request-form input {
+  display: block;
+  width: 370px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#request-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#request-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*book search bar*/
+  .search-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .search-container input[type="text"] {
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .search-container button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+
+    /* Add padding to the body to prevent content from overlapping with the fixed search container */
+    body {
+      padding-top: 60px;
+    }
+
+
+    /*this is students login page*/
+     
